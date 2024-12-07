@@ -1,5 +1,5 @@
 {
-    "name": "Meu Ambiente de Desenvolvimento",
+    "name": "Personal codespaces Airflow 'ENGINE'",
     "build": {
       "dockerfile": "Dockerfile"
     },
