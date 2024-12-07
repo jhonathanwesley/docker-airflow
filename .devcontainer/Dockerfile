@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04
 
-# Instala o Docker CLI
 RUN apt-get update && \
     apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
@@ -8,9 +7,7 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y docker-ce-cli
 
-# Instala o Docker Compose
 RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
     chmod +x /usr/local/bin/docker-compose
 
-# Adiciona o usuário vscode ao grupo docker
 RUN usermod -aG docker vscode

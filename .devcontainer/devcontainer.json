@@ -8,6 +8,9 @@
     "runArgs": ["--privileged"],
     "mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
     "postCreateCommand": "docker-compose up -d",
-    "remoteUser": "vscode"
+    "remoteUser": "vscode",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    }
   }
   
