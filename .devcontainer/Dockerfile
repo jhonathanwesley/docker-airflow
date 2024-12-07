@@ -11,3 +11,4 @@ RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-c
     chmod +x /usr/local/bin/docker-compose
 
 RUN usermod -aG docker vscode
+
