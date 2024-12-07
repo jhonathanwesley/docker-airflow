@@ -3,7 +3,7 @@
     "build": {
       "dockerfile": "Dockerfile"
     },
-    "workspaceFolder": "/workspaces/$/workspaces/docker-airflow",
+    "workspaceFolder": "/workspaces/docker-airflow",
     "forwardPorts": [8080, 8080],
     "runArgs": ["--privileged"],
     "mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
